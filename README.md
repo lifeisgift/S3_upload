@@ -35,4 +35,4 @@ S3 Upload for DEEP\_ARCHIVE scenery
 
 冷备的文件偶尔也存在检索需求，针对用户的检索需求，可以采用如下的 serverless 架构来实现。
 
-![](RackMultipart20201017-4-1qs7o1l_html_58fb7e7518785e2b.png)
+![image](https://github.com/lifeisgift/S3_upload/blob/main/image_search.png)
