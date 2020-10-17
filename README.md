@@ -15,7 +15,7 @@ S3 Upload for DEEP\_ARCHIVE scenery
 
 从对比可以看到，S3 Glacier Deep Archive 存储等级在存储成本上拥有极大优势，但是客户以小文件为主，若不对文件进行任何合并，put费用会显得更高，所以本示例代码中，对文件进行聚合后再上传，以40倍聚合比为例，可以将put费用极大降低，整体成本进一步优化，相比本地存储也具有很大的价格优势。
 
-本示例基于 S3 resumable upload 进行重写，实现基本功能如下
+## 本示例基于 S3 resumable upload 进行重写，实现基本功能如下
 
 - 文件聚合
 
@@ -33,6 +33,6 @@ S3 Upload for DEEP\_ARCHIVE scenery
 
 客户测试过程中出现过本地机房掉电等场景，为了避免压缩上传重新开始，用户可以设置 *ifRecoverFromLast*，*LastZipIndexFile* 参数，脚本会自动从上一次最后一个文件开始恢复压缩和上传操作。
 
-冷备的文件偶尔也存在检索需求，针对用户的检索需求，可以采用如下的 serverless 架构来实现。
+## 冷备的文件偶尔也存在检索需求，针对用户的检索需求，可以采用如下的 serverless 架构来实现。
 
 ![image](https://github.com/lifeisgift/S3_upload/blob/main/image_search.png)
